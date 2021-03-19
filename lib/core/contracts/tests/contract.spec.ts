@@ -4,38 +4,35 @@
  * Proprietary and confidential.
  */
 
-import pick from 'lodash/pick';
-import { Contract, ContractSummary, ContractDefinition } from '../contract';
-import repository from './fixtures/repository.json';
+import type { ActionRequestContract } from '../action-request';
+import { Contract } from '../contract';
 
 describe('Contract', () => {
-	test('throws no TypeScript errors', () => {
-		const repo: Contract = repository;
-		expect(repo.id).toEqual(repository.id);
-	});
-});
-
-describe('ContractSummary', () => {
-	test('throws no TypeScript errors', () => {
-		const repoSummary: ContractSummary = pick(
-			repository,
-			'id',
-			'slug',
-			'version',
-			'type',
-		);
-		expect(repoSummary.id).toEqual(repository.id);
-	});
-});
-
-describe('ContractDefinition', () => {
-	test('throws no TypeScript errors', () => {
-		const repoDefinition: ContractDefinition = pick(
-			repository,
-			'slug',
-			'version',
-			'type',
-		);
-		expect(repoDefinition.slug).toEqual(repository.slug);
+	test('can be instantiated', () => {
+		const actionRequest: ActionRequestContract = {
+			id: 'id1',
+			slug: 'slug-1',
+			version: '1.0.0',
+			type: 'my-type',
+			tags: [],
+			markers: [],
+			active: true,
+			created_at: '2019-06-19T08:32:33.142Z',
+			data: {
+				action: 'action',
+				actor: 'actor',
+				arguments: {},
+				context: {},
+				epoch: 1,
+				input: {
+					id: 'id2',
+				},
+				timestamp: 'timestamp',
+			},
+			requires: [],
+			capabilities: [],
+		};
+		const contract: Contract = actionRequest;
+		expect(contract.id).toBe(actionRequest.id);
 	});
 });
