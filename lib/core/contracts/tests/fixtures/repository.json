@@ -1,0 +1,31 @@
+{
+  "id": "1ef5ab38-940f-4808-a8c5-96e5fef25e0c",
+  "data": {
+    "name": "jellyfish",
+    "owner": "product-os",
+    "origin": "external-event-8240deb2-0115-4c0e-8cec-76df86fbc8a2@1.0.0",
+    "git_url": "git://github.com/product-os/jellyfish.git",
+    "html_url": "https://github.com/product-os/jellyfish"
+  },
+  "name": "product-os/jellyfish",
+  "slug": "repository-product-os-jellyfish",
+  "tags": [],
+  "type": "repository@1.0.0",
+  "links": {
+    "has attached element": []
+  },
+  "active": true,
+  "markers": [],
+  "version": "1.0.0",
+  "requires": [],
+  "linked_at": {
+    "has": "2021-03-18T23:29:32.591Z",
+    "is base of": "2021-03-18T20:02:19.012Z",
+    "is head of": "2021-03-18T20:02:18.635Z",
+    "is referenced by": "2020-04-22T14:47:44.798Z",
+    "has attached element": "2021-03-18T20:02:18.338Z"
+  },
+  "created_at": "2020-03-19T11:10:48.101Z",
+  "updated_at": "2021-03-18T20:02:18.290Z",
+  "capabilities": []
+}

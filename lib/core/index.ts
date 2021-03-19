@@ -4,4 +4,4 @@
  * Proprietary and confidential.
  */
 
-export * as core from './core';
+export * from './contracts';
