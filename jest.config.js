@@ -4,4 +4,7 @@
  * Proprietary and confidential.
  */
 
-export * as core from './core';
+module.exports = {
+	preset: "ts-jest",
+	testEnvironment: "node",
+};
