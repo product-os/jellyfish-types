@@ -103,6 +103,19 @@ interface OptionalContract<TData = ContractData>
 export interface ContractDefinition<TData = ContractData>
 	extends Omit<
 			OptionalContract<TData>,
-			'slug' | 'type' | 'links' | 'created_at' | 'updated_at' | 'linked_at'
+			| 'slug'
+			| 'type'
+			| 'links'
+			| 'created_at'
+			| 'updated_at'
+			| 'linked_at'
+			| 'data'
 		>,
-		Pick<Contract<TData>, 'slug' | 'type'> {}
+		Pick<Contract<TData>, 'slug' | 'type' | 'data'> {}
+
+/**
+ * A map of contracts, keyed by slug
+ */
+export interface ContractMap {
+	[slug: string]: ContractDefinition;
+}

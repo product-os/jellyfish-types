@@ -9,7 +9,8 @@ import { Contract, ContractDefinition } from './contract';
 
 export interface TypeData {
 	schema: JSONSchema;
-	uiSchema: unknown;
+	uiSchema?: unknown;
+	[k: string]: unknown;
 }
 
 export interface TypeContract extends Contract<TypeData> {}

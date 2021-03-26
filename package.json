@@ -12,7 +12,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": [
-    "build/"
+    "build/",
+    "@types/"
   ],
   "directories": {
     "lib": "lib"
@@ -55,10 +56,12 @@
     "catch-uncommitted": "^1.6.2",
     "depcheck": "^1.4.0",
     "deplint": "^1.1.3",
+    "fast-json-patch": "^3.0.0-1",
     "jest": "^26.6.3",
     "json-schema": "^0.3.0",
     "lint-staged": "^10.5.4",
     "lodash": "^4.17.21",
+    "pg-promise": "^10.9.5",
     "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.3.1",
     "ts-jest": "^26.5.4",
