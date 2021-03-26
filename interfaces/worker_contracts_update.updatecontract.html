@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ContractDefinition | @balena/jellyfish-types</title>
+	<title>UpdateContract | @balena/jellyfish-types</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-types">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,95 +53,27 @@
 					<a href="../modules.html">@balena/jellyfish-types</a>
 				</li>
 				<li>
-					<a href="../modules/core_contracts_contract.html">core/contracts/contract</a>
+					<a href="../modules/worker_contracts_update.html">worker/contracts/update</a>
 				</li>
 				<li>
-					<a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>
+					<a href="worker_contracts_update.updatecontract.html">UpdateContract</a>
 				</li>
 			</ul>
-			<h1>Interface ContractDefinition&lt;TData&gt;</h1>
+			<h1>Interface UpdateContract</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Contracts are defined with certain required properties and various other optional properties.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TData = <a href="core_contracts_contract.contractdata.html" class="tsd-signature-type" data-tsd-kind="Interface">ContractData</a></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">OptionalContract</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;slug&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;type&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;links&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;created_at&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;updated_at&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;linked_at&quot;</span><span class="tsd-signature-symbol">&gt;</span>
-					</li>
-					<li>
-						<span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="core_contracts_contract.contract.html" class="tsd-signature-type" data-tsd-kind="Interface">Contract</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;slug&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;type&quot;</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="core_contracts_contract.contract.html" class="tsd-signature-type" data-tsd-kind="Interface">Contract</a><span class="tsd-signature-symbol">&lt;</span><a href="worker_contracts_update.updatedata.html" class="tsd-signature-type" data-tsd-kind="Interface">UpdateData</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ContractDefinition</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="core_contracts_action_request.actionrequestcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">ActionRequestContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_action.actioncontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">ActionContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_event.eventcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">EventContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_link.linkcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">LinkContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_oauth_client.oauthclientcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">OauthClientContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_oauth_provider.oauthprovidercontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">OauthProviderContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_org.orgcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">OrgContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_role.rolecontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">RoleContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_session.sessioncontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">SessionContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_type.typecontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">TypeContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_user.usercontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">UserContractDefinition</a>
-									</li>
-									<li>
-										<a href="core_contracts_view.viewcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">ViewContractDefinition</a>
-									</li>
-									<li>
-										<a href="queue_contracts_execute.executecontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">ExecuteContractDefinition</a>
-									</li>
-									<li>
-										<a href="worker_contracts_create.createcontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">CreateContractDefinition</a>
-									</li>
-									<li>
-										<a href="worker_contracts_triggered_action.triggeredactioncontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">TriggeredActionContractDefinition</a>
-									</li>
-									<li>
-										<a href="worker_contracts_update.updatecontractdefinition.html" class="tsd-signature-type" data-tsd-kind="Interface">UpdateContractDefinition</a>
-									</li>
-								</ul>
+								<span class="target">UpdateContract</span>
 							</li>
 						</ul>
 					</li>
@@ -154,17 +86,21 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#active" class="tsd-kind-icon">active</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#capabilities" class="tsd-kind-icon">capabilities</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#markers" class="tsd-kind-icon">markers</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#requires" class="tsd-kind-icon">requires</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#slug" class="tsd-kind-icon">slug</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#tags" class="tsd-kind-icon">tags</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_contract.contractdefinition.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#active" class="tsd-kind-icon">active</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#capabilities" class="tsd-kind-icon">capabilities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#created_at" class="tsd-kind-icon">created_<wbr>at</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#linked_at" class="tsd-kind-icon">linked_<wbr>at</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#links" class="tsd-kind-icon">links</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#markers" class="tsd-kind-icon">markers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#requires" class="tsd-kind-icon">requires</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#slug" class="tsd-kind-icon">slug</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#tags" class="tsd-kind-icon">tags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#updated_at" class="tsd-kind-icon">updated_<wbr>at</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="worker_contracts_update.updatecontract.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -174,10 +110,10 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="active" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> active</h3>
+					<h3>active</h3>
 					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.active</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#active">active</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L65">core/contracts/contract.ts:65</a></li>
 						</ul>
@@ -190,10 +126,10 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="capabilities" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> capabilities</h3>
+					<h3>capabilities</h3>
 					<div class="tsd-signature tsd-kind-icon">capabilities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.capabilities</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#capabilities">capabilities</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L79">core/contracts/contract.ts:79</a></li>
 						</ul>
@@ -205,11 +141,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="data" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TData</span></div>
+					<a name="created_at" class="tsd-anchor"></a>
+					<h3>created_<wbr>at</h3>
+					<div class="tsd-signature tsd-kind-icon">created_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.data</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#created_at">created_at</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L57">core/contracts/contract.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The date/time the contract was created, expressed as an ISO 8601 string.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="worker_contracts_update.updatedata.html" class="tsd-signature-type" data-tsd-kind="Interface">UpdateData</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#data">data</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L69">core/contracts/contract.ts:69</a></li>
 						</ul>
@@ -222,10 +174,10 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
+					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.id</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#id">id</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L21">core/contracts/contract.ts:21</a></li>
 						</ul>
@@ -237,11 +189,59 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="linked_at" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> linked_<wbr>at</h3>
+					<div class="tsd-signature tsd-kind-icon">linked_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#linked_at">linked_at</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L85">core/contracts/contract.ts:85</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Link timestamps, keyed by &#39;link verb&#39;.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="links" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> links</h3>
+					<div class="tsd-signature tsd-kind-icon">links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#links">links</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L51">core/contracts/contract.ts:51</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Linked contracts, keyed by the &#39;link verb&#39;.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="markers" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> markers</h3>
+					<h3>markers</h3>
 					<div class="tsd-signature tsd-kind-icon">markers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.markers</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#markers">markers</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L47">core/contracts/contract.ts:47</a></li>
 						</ul>
@@ -257,7 +257,7 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.name</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#name">name</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L33">core/contracts/contract.ts:33</a></li>
 						</ul>
@@ -270,10 +270,10 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="requires" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> requires</h3>
+					<h3>requires</h3>
 					<div class="tsd-signature tsd-kind-icon">requires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.requires</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#requires">requires</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L73">core/contracts/contract.ts:73</a></li>
 						</ul>
@@ -289,7 +289,7 @@
 					<h3>slug</h3>
 					<div class="tsd-signature tsd-kind-icon">slug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Pick.slug</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#slug">slug</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L29">core/contracts/contract.ts:29</a></li>
 						</ul>
@@ -302,10 +302,10 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="tags" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tags</h3>
+					<h3>tags</h3>
 					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.tags</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#tags">tags</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L43">core/contracts/contract.ts:43</a></li>
 						</ul>
@@ -321,7 +321,7 @@
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Pick.type</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#type">type</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L39">core/contracts/contract.ts:39</a></li>
 						</ul>
@@ -334,11 +334,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="updated_at" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> updated_<wbr>at</h3>
+					<div class="tsd-signature tsd-kind-icon">updated_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#updated_at">updated_at</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L61">core/contracts/contract.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The date/time the contract was most recently updated, expressed as an ISO 8601 string.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="version" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> version</h3>
+					<h3>version</h3>
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from Omit.version</p>
+						<p>Inherited from <a href="core_contracts_contract.contract.html">Contract</a>.<a href="core_contracts_contract.contract.html#version">version</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L25">core/contracts/contract.ts:25</a></li>
 						</ul>
@@ -358,62 +374,71 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/core_contracts_contract.html">core/contracts/contract</a>
+						<a href="../modules/worker_contracts_update.html">worker/contracts/update</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="core_contracts_contract.contract.html" class="tsd-kind-icon">Contract</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="core_contracts_contract.contractdata.html" class="tsd-kind-icon">Contract<wbr>Data</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="core_contracts_contract.contractdefinition.html" class="tsd-kind-icon">Contract<wbr>Definition</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="worker_contracts_update.updatecontract.html" class="tsd-kind-icon">Update<wbr>Contract</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#active" class="tsd-kind-icon">active</a>
+								<a href="worker_contracts_update.updatecontract.html#active" class="tsd-kind-icon">active</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#capabilities" class="tsd-kind-icon">capabilities</a>
+								<a href="worker_contracts_update.updatecontract.html#capabilities" class="tsd-kind-icon">capabilities</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#data" class="tsd-kind-icon">data</a>
+								<a href="worker_contracts_update.updatecontract.html#created_at" class="tsd-kind-icon">created_<wbr>at</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#id" class="tsd-kind-icon">id</a>
+								<a href="worker_contracts_update.updatecontract.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#markers" class="tsd-kind-icon">markers</a>
+								<a href="worker_contracts_update.updatecontract.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#name" class="tsd-kind-icon">name</a>
+								<a href="worker_contracts_update.updatecontract.html#linked_at" class="tsd-kind-icon">linked_<wbr>at</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#requires" class="tsd-kind-icon">requires</a>
+								<a href="worker_contracts_update.updatecontract.html#links" class="tsd-kind-icon">links</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#slug" class="tsd-kind-icon">slug</a>
+								<a href="worker_contracts_update.updatecontract.html#markers" class="tsd-kind-icon">markers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#tags" class="tsd-kind-icon">tags</a>
+								<a href="worker_contracts_update.updatecontract.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#type" class="tsd-kind-icon">type</a>
+								<a href="worker_contracts_update.updatecontract.html#requires" class="tsd-kind-icon">requires</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="core_contracts_contract.contractdefinition.html#version" class="tsd-kind-icon">version</a>
+								<a href="worker_contracts_update.updatecontract.html#slug" class="tsd-kind-icon">slug</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="worker_contracts_update.updatecontract.html#tags" class="tsd-kind-icon">tags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="worker_contracts_update.updatecontract.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="worker_contracts_update.updatecontract.html#updated_at" class="tsd-kind-icon">updated_<wbr>at</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="worker_contracts_update.updatecontract.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="core_contracts_contract.contractsummary.html" class="tsd-kind-icon">Contract<wbr>Summary</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="worker_contracts_update.updatecontractdefinition.html" class="tsd-kind-icon">Update<wbr>Contract<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="worker_contracts_update.updatedata.html" class="tsd-kind-icon">Update<wbr>Data</a>
 					</li>
 				</ul>
 			</nav>
