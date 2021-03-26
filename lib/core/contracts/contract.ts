@@ -5,9 +5,16 @@
  */
 
 /**
+ * The data interface used when we don't know/care what the contract type is.
+ */
+export interface ContractData {
+	[k: string]: unknown;
+}
+
+/**
  * The base interface that must be implemented by every contract.
  */
-export interface Contract {
+export interface Contract<TData = ContractData> {
 	/**
 	 * A UUID that uniquely identifies this contract.
 	 */
@@ -59,9 +66,7 @@ export interface Contract {
 	/**
 	 * The data associated with this contract.
 	 */
-	data: {
-		[k: string]: unknown;
-	};
+	data: TData;
 	/**
 	 * A list of requirements/dependencies for this contract.
 	 */
@@ -85,17 +90,18 @@ export interface Contract {
 /**
  * A summary of a contract, containing just the key fields.
  */
-export interface ContractSummary
-	extends Pick<Contract, 'id' | 'slug' | 'version' | 'type'> {}
+export interface ContractSummary<TData = ContractData>
+	extends Pick<Contract<TData>, 'id' | 'slug' | 'version' | 'type'> {}
 
-interface OptionalContract extends Partial<Contract> {}
+interface OptionalContract<TData = ContractData>
+	extends Partial<Contract<TData>> {}
 
 /**
  * Contracts are defined with certain required properties and various other optional properties.
  */
-export interface ContractDefinition
+export interface ContractDefinition<TData = ContractData>
 	extends Omit<
-			OptionalContract,
+			OptionalContract<TData>,
 			'slug' | 'type' | 'links' | 'created_at' | 'updated_at' | 'linked_at'
 		>,
-		Pick<Contract, 'slug' | 'type'> {}
+		Pick<Contract<TData>, 'slug' | 'type'> {}

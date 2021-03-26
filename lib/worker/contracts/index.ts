@@ -4,7 +4,6 @@
  * Proprietary and confidential.
  */
 
-export * as core from './core';
-export { JellyfishError } from './error';
-export * as queue from './queue';
-export * as worker from './worker';
+export * from './create';
+export * from './triggered-action';
+export * from './update';
