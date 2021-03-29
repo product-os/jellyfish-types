@@ -19,6 +19,7 @@ export interface JSONSchema {
 	$$links?: {
 		[key: string]: JSONSchema;
 	};
+	fullTextSearch?: boolean;
 	$id?: string;
 	$ref?: string;
 	$schema?: JSONSchema7Version;
