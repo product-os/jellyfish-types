@@ -59,7 +59,7 @@
 					<a href="core_contracts_contract.contract.html">Contract</a>
 				</li>
 			</ul>
-			<h1>Interface Contract&lt;TData&gt;</h1>
+			<h1>Interface Contract&lt;TData, TLinks&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -78,6 +78,9 @@
 				<ul class="tsd-type-parameters">
 					<li>
 						<h4>TData = <a href="core_contracts_contract.contractdata.html" class="tsd-signature-type" data-tsd-kind="Interface">ContractData</a></h4>
+					</li>
+					<li>
+						<h4>TLinks = <span class="tsd-signature-symbol">{}</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -174,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L65">core/contracts/contract.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L66">core/contracts/contract.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">capabilities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L79">core/contracts/contract.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L80">core/contracts/contract.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -204,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">created_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L57">core/contracts/contract.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L58">core/contracts/contract.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TData</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L69">core/contracts/contract.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L70">core/contracts/contract.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -234,7 +237,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L21">core/contracts/contract.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L24">core/contracts/contract.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -249,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">linked_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L85">core/contracts/contract.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L86">core/contracts/contract.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,24 +272,16 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="links" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> links</h3>
-					<div class="tsd-signature tsd-kind-icon">links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<div class="tsd-signature tsd-kind-icon">links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TLinks</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L51">core/contracts/contract.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L54">core/contracts/contract.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Linked contracts, keyed by the &#39;link verb&#39;.</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></h5>
-							</li>
-						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -295,7 +290,7 @@
 					<div class="tsd-signature tsd-kind-icon">markers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L47">core/contracts/contract.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L50">core/contracts/contract.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -310,7 +305,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L33">core/contracts/contract.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L36">core/contracts/contract.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -325,7 +320,7 @@
 					<div class="tsd-signature tsd-kind-icon">requires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L73">core/contracts/contract.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L74">core/contracts/contract.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -340,7 +335,7 @@
 					<div class="tsd-signature tsd-kind-icon">slug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L29">core/contracts/contract.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L32">core/contracts/contract.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,7 +350,7 @@
 					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L43">core/contracts/contract.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L46">core/contracts/contract.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -370,7 +365,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L39">core/contracts/contract.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L42">core/contracts/contract.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -386,7 +381,7 @@
 					<div class="tsd-signature tsd-kind-icon">updated_<wbr>at<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L61">core/contracts/contract.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L62">core/contracts/contract.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -401,7 +396,7 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L25">core/contracts/contract.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/master/lib/core/contracts/contract.ts#L28">core/contracts/contract.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
