@@ -14,7 +14,10 @@ export interface ContractData {
 /**
  * The base interface that must be implemented by every contract.
  */
-export interface Contract<TData = ContractData> {
+export interface Contract<
+	TData = ContractData,
+	TLinks = { [key: string]: Contract[] }
+> {
 	/**
 	 * A UUID that uniquely identifies this contract.
 	 */
@@ -48,9 +51,7 @@ export interface Contract<TData = ContractData> {
 	/**
 	 * Linked contracts, keyed by the 'link verb'.
 	 */
-	links?: {
-		[k: string]: unknown;
-	};
+	links?: TLinks;
 	/**
 	 * The date/time the contract was created, expressed as an ISO 8601 string.
 	 */
