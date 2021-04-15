@@ -27,9 +27,7 @@ export interface ExecuteData {
 			| unknown[]
 			| null;
 		error: boolean;
-		action: {
-			[k: string]: unknown;
-		} & string;
+		action: string;
 		timestamp: string;
 		[k: string]: unknown;
 	};
