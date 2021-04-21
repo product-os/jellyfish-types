@@ -5,10 +5,12 @@
  */
 
 export interface PostResults {
-	data: {
-		originator?: string;
-		[key: string]: any;
-	};
+	data:
+		| string
+		| {
+				originator?: string;
+				[key: string]: any;
+		  };
 	error: boolean;
 }
 
