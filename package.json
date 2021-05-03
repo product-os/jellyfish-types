@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellyfish-types",
-  "version": "0.5.89",
+  "version": "0.5.90",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-types.git"
