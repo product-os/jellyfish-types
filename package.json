@@ -33,7 +33,7 @@
   },
   "scripts": {
     "clean": "rimraf build",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
     "lint": "balena-lint --typescript lib && npm run check && deplint && depcheck --ignore-bin-package --ignores=@types/jest,@balena/jellyfish-types",
     "lint-fix": "balena-lint --typescript --fix lib",
     "unit": "jest",
@@ -50,6 +50,7 @@
   "devDependencies": {
     "@balena/jellycheck": "^0.1.1",
     "@balena/jellyfish-client-sdk": "^3.2.164",
+    "@balena/jellyfish-config": "^1.0.3",
     "@balena/lint": "^5.4.2",
     "@types/jest": "^26.0.23",
     "@types/json-schema": "^7.0.7",
