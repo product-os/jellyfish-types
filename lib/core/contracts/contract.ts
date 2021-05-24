@@ -16,7 +16,7 @@ export interface ContractData {
  */
 export interface Contract<
 	TData = ContractData,
-	TLinks = { [key: string]: Contract[] }
+	TLinks = { [key: string]: Contract[] },
 > {
 	/**
 	 * A UUID that uniquely identifies this contract.
