@@ -50,7 +50,7 @@
   "devDependencies": {
     "@balena/jellycheck": "^0.1.1",
     "@balena/jellyfish-client-sdk": "^3.2.164",
-    "@balena/jellyfish-config": "^1.2.6",
+    "@balena/jellyfish-config": "^1.2.7",
     "@balena/lint": "^6.1.1",
     "@types/jest": "^26.0.23",
     "@types/json-schema": "^7.0.7",
