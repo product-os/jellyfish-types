@@ -35,6 +35,10 @@ export interface Contract<
 	 */
 	name?: string | null;
 	/**
+	 * The slug of the loop that the contract belongs to.
+	 */
+	loop?: string | null;
+	/**
 	 * The type of this contract. The type value should include the version.
 	 *
 	 * For example: 'my-type@1.0.0'

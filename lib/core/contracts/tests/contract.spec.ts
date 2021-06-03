@@ -15,6 +15,7 @@ describe('Contract', () => {
 			version: '1.0.0',
 			type: 'my-type',
 			tags: [],
+			loop: 'l/product-os',
 			markers: [],
 			active: true,
 			created_at: '2019-06-19T08:32:33.142Z',
