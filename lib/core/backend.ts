@@ -24,7 +24,7 @@ export interface LinksMap {
 export interface QueryOptions {
 	limit?: number;
 	skip?: number;
-	sortBy?: string;
+	sortBy?: string | string[];
 	sortDir?: 'asc' | 'desc';
 	profile?: boolean;
 	links?: LinksMap;
