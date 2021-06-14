@@ -31,6 +31,10 @@ export interface Contract<
 	 */
 	slug: string;
 	/**
+	 * A generated field in the format slug @ version
+	 */
+	versioned_slug?: string;
+	/**
 	 * An optional user-friendly name for this contract.
 	 */
 	name?: string | null;
@@ -108,6 +112,7 @@ export interface ContractDefinition<TData = ContractData>
 	extends Omit<
 			OptionalContract<TData>,
 			| 'slug'
+			| 'versioned_slug'
 			| 'type'
 			| 'links'
 			| 'created_at'
