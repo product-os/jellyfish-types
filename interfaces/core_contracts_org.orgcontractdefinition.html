@@ -92,6 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#capabilities" class="tsd-kind-icon">capabilities</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#loop" class="tsd-kind-icon">loop</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#markers" class="tsd-kind-icon">markers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="core_contracts_org.orgcontractdefinition.html#requires" class="tsd-kind-icon">requires</a></li>
@@ -113,7 +114,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#active">active</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L66">lib/core/contracts/contract.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L70">lib/core/contracts/contract.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -129,7 +130,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#capabilities">capabilities</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L80">lib/core/contracts/contract.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L84">lib/core/contracts/contract.ts:84</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,7 +146,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#data">data</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L70">lib/core/contracts/contract.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L74">lib/core/contracts/contract.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -161,12 +162,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L24">lib/core/contracts/contract.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L24">lib/core/contracts/contract.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>A UUID that uniquely identifies this contract.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="loop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> loop</h3>
+					<div class="tsd-signature tsd-kind-icon">loop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#loop">loop</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L40">lib/core/contracts/contract.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The slug of the loop that the contract belongs to.</p>
 						</div>
 					</div>
 				</section>
@@ -177,7 +194,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#markers">markers</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L50">lib/core/contracts/contract.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L54">lib/core/contracts/contract.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,7 +210,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L36">lib/core/contracts/contract.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L36">lib/core/contracts/contract.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,7 +226,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#requires">requires</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L74">lib/core/contracts/contract.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L78">lib/core/contracts/contract.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,7 +242,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#slug">slug</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L32">lib/core/contracts/contract.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L32">lib/core/contracts/contract.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -241,7 +258,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#tags">tags</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L46">lib/core/contracts/contract.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L50">lib/core/contracts/contract.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -257,14 +274,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L42">lib/core/contracts/contract.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L46">lib/core/contracts/contract.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The type of this contract. The type value should include the version.</p>
 						</div>
-						<p>For example: &#39;my-type@1.0.0&#39;</p>
+						<p>For example: &#39;<a href="mailto:my-type@1.0.0">my-type@1.0.0</a>&#39;</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -274,7 +291,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="core_contracts_contract.contractdefinition.html">ContractDefinition</a>.<a href="core_contracts_contract.contractdefinition.html#version">version</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/dd0809f/lib/core/contracts/contract.ts#L28">lib/core/contracts/contract.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/5db8d8c/lib/core/contracts/contract.ts#L28">lib/core/contracts/contract.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -289,7 +306,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class=" ">
-						<a href="../modules.html">Exports</a>
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/core_contracts_org.html">core/contracts/org</a>
@@ -317,6 +334,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="core_contracts_org.orgcontractdefinition.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="core_contracts_org.orgcontractdefinition.html#loop" class="tsd-kind-icon">loop</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="core_contracts_org.orgcontractdefinition.html#markers" class="tsd-kind-icon">markers</a>
