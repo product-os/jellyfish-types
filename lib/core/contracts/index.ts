@@ -9,6 +9,7 @@ export * from './action';
 export * from './contract';
 export * from './event';
 export * from './link';
+export * from './loop';
 export * from './oauth-client';
 export * from './oauth-provider';
 export * from './org';
