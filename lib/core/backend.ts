@@ -12,6 +12,13 @@ import { Context } from './context';
 import { Contract, ContractDefinition } from './contracts';
 import { JSONSchema } from '../json-schema';
 
+export interface StreamChange {
+	id: string;
+	type: 'update' | 'insert' | 'delete' | 'unmatch';
+	before: Contract;
+	after: Contract;
+}
+
 export interface QuerySelect {
 	[key: string]: any;
 }
