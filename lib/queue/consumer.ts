@@ -8,17 +8,9 @@ import { Context, ActionRequestContract } from '../core';
 import { ExecuteContract } from './contracts';
 import { PostResults } from './events';
 
-export interface ActionPayload {
-	slug: string;
-	data: {
-		originator: string;
-		timestamp: string;
-		action: string;
-		actor?: string;
-	};
-}
-
-export type OnMessageEventHandler = (payload: ActionPayload) => Promise<void>;
+export type OnMessageEventHandler = (
+	payload: ActionRequestContract,
+) => Promise<void>;
 
 export interface QueueConsumer {
 	initializeWithEventHandler: (
