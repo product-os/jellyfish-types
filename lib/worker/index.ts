@@ -67,8 +67,11 @@ export interface WorkerContext {
 	};
 }
 
+// TS-TODO: it's annoying that action-increment-tag returns an array of contract summaries
+// whereas all the other actions return either null or a single contract summary. Might be
+// better to standardize
 export interface Action {
-	handler: (
+	handler: <TData = core.ContractData>(
 		session: string,
 		context: WorkerContext,
 		// The full contract of the action target.
@@ -86,6 +89,12 @@ export interface Action {
 			arguments: { [arg: string]: JSONSchema };
 			originator?: string;
 		},
-	) => any;
-	pre: (session: string, context: any, request: any) => any;
+	) => Promise<
+		null | core.ContractSummary<TData> | Array<core.ContractSummary<TData>>
+	>;
+	pre: (
+		session: string,
+		context: core.Context,
+		request: any,
+	) => Promise<any> | any;
 }
