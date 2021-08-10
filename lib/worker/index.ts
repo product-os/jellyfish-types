@@ -99,8 +99,8 @@ export interface Action {
 		session: string,
 		context: WorkerContext,
 		request: {
-			// The full contract of the action being executed.
-			action: core.ActionContract;
+			// The slug of the action being executed.
+			action: string;
 			// The ID or Slug of the action target
 			card: string;
 			type: string;
