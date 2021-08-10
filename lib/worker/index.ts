@@ -6,7 +6,7 @@
 
 export * from './contracts';
 import { Operation } from 'fast-json-patch';
-import { core, JSONSchema } from '../';
+import { core } from '../';
 import { WorkerErrors } from './errors';
 
 export interface WorkerContext {
@@ -86,15 +86,26 @@ export interface Action {
 			context: core.Context;
 			timestamp: any;
 			epoch: any;
-			arguments: { [arg: string]: JSONSchema };
+			arguments: { [k: string]: any };
 			originator?: string;
 		},
 	) => Promise<
 		null | core.ContractSummary<TData> | Array<core.ContractSummary<TData>>
 	>;
+
+	// Preprocess action arguments before sotring the action in the DB. e.g. Hashing a plaintext password
+	// This function returns a (potentially) modified copy of the action arguments
 	pre: (
 		session: string,
-		context: core.Context,
-		request: any,
+		context: WorkerContext,
+		request: {
+			// The full contract of the action being executed.
+			action: core.ActionContract;
+			// The ID or Slug of the action target
+			card: string;
+			type: string;
+			context: core.Context;
+			arguments: { [k: string]: any };
+		},
 	) => Promise<any> | any;
 }
