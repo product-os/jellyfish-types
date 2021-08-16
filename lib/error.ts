@@ -17,3 +17,11 @@ export interface JellyfishError extends Error {
 	 */
 	expected: boolean;
 }
+
+export interface JellyfishErrorConstructor {
+	new (message?: string): JellyfishError;
+	(message?: string): JellyfishError;
+	readonly prototype: JellyfishError;
+}
+
+export declare var JellyfishError: JellyfishErrorConstructor;
