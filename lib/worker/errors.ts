@@ -4,17 +4,17 @@
  * Proprietary and confidential.
  */
 
-import { JellyfishError } from '../error';
+import { JellyfishErrorConstructor } from '../error';
 
 export interface WorkerErrors {
-	WorkerNoExecuteEvent: JellyfishError;
-	WorkerNoElement: JellyfishError;
-	WorkerInvalidVersion: JellyfishError;
-	WorkerInvalidAction: JellyfishError;
-	WorkerInvalidActionRequest: JellyfishError;
-	WorkerInvalidTrigger: JellyfishError;
-	WorkerInvalidTemplate: JellyfishError;
-	WorkerInvalidDuration: JellyfishError;
-	WorkerSchemaMismatch: JellyfishError;
-	WorkerAuthenticationError: JellyfishError;
+	WorkerNoExecuteEvent: JellyfishErrorConstructor;
+	WorkerNoElement: JellyfishErrorConstructor;
+	WorkerInvalidVersion: JellyfishErrorConstructor;
+	WorkerInvalidAction: JellyfishErrorConstructor;
+	WorkerInvalidActionRequest: JellyfishErrorConstructor;
+	WorkerInvalidTrigger: JellyfishErrorConstructor;
+	WorkerInvalidTemplate: JellyfishErrorConstructor;
+	WorkerInvalidDuration: JellyfishErrorConstructor;
+	WorkerSchemaMismatch: JellyfishErrorConstructor;
+	WorkerAuthenticationError: JellyfishErrorConstructor;
 }

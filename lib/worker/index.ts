@@ -22,7 +22,7 @@ export interface WorkerContext {
 	query: <T extends core.Contract = core.Contract>(
 		lsession: string,
 		schema: Parameters<core.JellyfishKernel['query']>[2],
-		options: Parameters<core.JellyfishKernel['query']>[3],
+		options?: Parameters<core.JellyfishKernel['query']>[3],
 	) => Promise<T[]>;
 	privilegedSession: string;
 	insertCard: (
