@@ -29,11 +29,11 @@ export interface WorkerContext {
 		lsession: string,
 		typeCard: core.TypeContract,
 		options: {
-			timestamp: any;
-			reason: any;
-			actor: any;
+			timestamp?: string | number | Date;
+			reason?: string;
+			actor?: any;
 			originator?: any;
-			attachEvents: any;
+			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
 	) => Promise<core.Contract | null>;
@@ -41,11 +41,11 @@ export interface WorkerContext {
 		lsession: string,
 		typeCard: core.TypeContract,
 		options: {
-			timestamp: any;
-			reason: any;
-			actor: any;
+			timestamp?: string | number | Date;
+			reason?: string;
+			actor?: any;
 			originator?: any;
-			attachEvents: any;
+			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
 	) => Promise<core.Contract | null>;
@@ -53,11 +53,11 @@ export interface WorkerContext {
 		lsession: string,
 		typeCard: core.TypeContract,
 		options: {
-			timestamp: any;
-			reason: any;
-			actor: any;
+			timestamp?: string | number | Date;
+			reason?: string;
+			actor?: any;
 			originator?: any;
-			attachEvents: any;
+			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
 		patch: Operation[],
