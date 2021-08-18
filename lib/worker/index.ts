@@ -31,8 +31,8 @@ export interface WorkerContext {
 		options: {
 			timestamp?: string | number | Date;
 			reason?: string;
-			actor?: any;
-			originator?: any;
+			actor?: string;
+			originator?: string;
 			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
@@ -43,8 +43,8 @@ export interface WorkerContext {
 		options: {
 			timestamp?: string | number | Date;
 			reason?: string;
-			actor?: any;
-			originator?: any;
+			actor?: string;
+			originator?: string;
 			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
@@ -55,8 +55,8 @@ export interface WorkerContext {
 		options: {
 			timestamp?: string | number | Date;
 			reason?: string;
-			actor?: any;
-			originator?: any;
+			actor?: string;
+			originator?: string;
 			attachEvents?: boolean;
 		},
 		card: Partial<core.Contract>,
