@@ -52,7 +52,7 @@
     "@balena/jellyfish-client-sdk": "^5.0.0",
     "@balena/jellyfish-config": "^1.4.8",
     "@balena/lint": "^6.1.1",
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.1",
     "@types/json-schema": "^7.0.9",
     "depcheck": "^1.4.2",
     "deplint": "^1.1.3",
