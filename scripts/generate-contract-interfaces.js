@@ -46,7 +46,7 @@ import { core } from '@balena/jellyfish-types';
  * @param contracts - a list of contracts. An interface definition file will be generated for every
  *                    _type_ contract.
  */
-async function generateContractInterfaces(
+export async function generateContractInterfaces(
 	outputDir,
 	contracts,
 ) {
@@ -77,9 +77,9 @@ async function generateContractInterfaces(
 				// Maybe include other fields whose definition differs from base Contract.
 				const schema = get(contract, [ 'data', 'schema', 'properties', 'data' ], {})
 				schema.title = `${contract.slug}-data`;
-				
+
 				let compiled = null;
-				
+
 				try {
 					compiled = await compile(schema, contract.slug, {
 						ignoreMinAndMaxItems: true,

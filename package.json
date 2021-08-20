@@ -13,7 +13,8 @@
   "types": "build/index.d.ts",
   "files": [
     "build/",
-    "@types/"
+    "@types/",
+    "scripts/"
   ],
   "directories": {
     "lib": "lib"
