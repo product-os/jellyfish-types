@@ -20,7 +20,11 @@ export type TriggeredActionData2 = {
 export interface TriggeredActionData1 {
 	mode?: 'insert' | 'update';
 	type?: string;
-	action?: string;
+	action?:
+		| string
+		| {
+				$eval: string;
+		  };
 	filter?: {
 		[k: string]: unknown;
 	};
