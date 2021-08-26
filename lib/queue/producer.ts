@@ -15,6 +15,7 @@ export interface ProducerOptions {
 	arguments: ContractData;
 	currentDate?: Date;
 	originator?: string;
+	schedule?: string;
 }
 
 export interface ProducerResults {
