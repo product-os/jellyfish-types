@@ -7,6 +7,7 @@
 export * from './contracts';
 import { Operation } from 'fast-json-patch';
 import { core } from '../';
+import { QueueProducer } from '../queue';
 import { WorkerErrors } from './errors';
 
 export interface WorkerContext {
@@ -65,6 +66,7 @@ export interface WorkerContext {
 	cards: {
 		[slug: string]: core.ContractDefinition<core.ContractData>;
 	};
+	producer: QueueProducer;
 }
 
 // TS-TODO: it's annoying that action-increment-tag returns an array of contract summaries
