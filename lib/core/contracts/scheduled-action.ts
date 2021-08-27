@@ -11,19 +11,10 @@
 // tslint:disable: array-type
 
 import { Contract, ContractDefinition } from './contract';
+import { ProducerOptions } from '../../queue';
 
 export interface ScheduledActionData {
-	options: {
-		action: string;
-		card?: string;
-		type?: string;
-		arguments?: {
-			[k: string]: unknown;
-		};
-		context?: {
-			[k: string]: unknown;
-		};
-	};
+	options: ProducerOptions;
 	schedule: {
 		once?: {
 			date: string;
