@@ -7,6 +7,7 @@
 export * from './contracts';
 import { Operation } from 'fast-json-patch';
 import { core } from '../';
+import { ProducerOptions } from '../queue';
 import { WorkerErrors } from './errors';
 
 export interface WorkerContext {
@@ -62,6 +63,10 @@ export interface WorkerContext {
 		card: Partial<core.Contract>,
 		patch: Operation[],
 	) => Promise<core.Contract | null>;
+	enqueueAction: (
+		session: string,
+		actionRequest: ProducerOptions,
+	) => Promise<core.ActionRequestContract>;
 	cards: {
 		[slug: string]: core.ContractDefinition<core.ContractData>;
 	};
