@@ -93,6 +93,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="worker.WorkerContext.html#enqueueAction" class="tsd-kind-icon">enqueue<wbr>Action</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="worker.WorkerContext.html#getCardById" class="tsd-kind-icon">get<wbr>Card<wbr>ById</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="worker.WorkerContext.html#getCardBySlug" class="tsd-kind-icon">get<wbr>Card<wbr>BySlug</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="worker.WorkerContext.html#getEventSlug" class="tsd-kind-icon">get<wbr>Event<wbr>Slug</a></li>
@@ -113,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">cards<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L65">lib/worker/index.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L70">lib/worker/index.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -131,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">defaults<span class="tsd-signature-symbol">:</span> &lt;TContract&gt;<span class="tsd-signature-symbol">(</span>contract<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContract</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">TContract</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L14">lib/worker/index.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L15">lib/worker/index.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -168,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <a href="worker_errors.WorkerErrors.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkerErrors</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L13">lib/worker/index.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L14">lib/worker/index.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">privileged<wbr>Session<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L27">lib/worker/index.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L28">lib/worker/index.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,13 +189,39 @@
 					<div class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L15">lib/worker/index.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L16">lib/worker/index.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="enqueueAction" class="tsd-anchor"></a>
+					<h3>enqueue<wbr>Action</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">enqueue<wbr>Action<span class="tsd-signature-symbol">(</span>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, actionRequest<span class="tsd-signature-symbol">: </span><a href="queue_producer.ProducerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProducerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core_contracts_action_request.ActionRequestContract.html" class="tsd-signature-type" data-tsd-kind="Interface">ActionRequestContract</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L66">lib/worker/index.ts:66</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>session: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>actionRequest: <a href="queue_producer.ProducerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProducerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="core_contracts_action_request.ActionRequestContract.html" class="tsd-signature-type" data-tsd-kind="Interface">ActionRequestContract</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getCardById" class="tsd-anchor"></a>
 					<h3>get<wbr>Card<wbr>ById</h3>
@@ -205,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L17">lib/worker/index.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L18">lib/worker/index.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -231,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L18">lib/worker/index.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L19">lib/worker/index.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -257,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L16">lib/worker/index.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L17">lib/worker/index.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -280,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L28">lib/worker/index.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L29">lib/worker/index.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -329,7 +356,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L52">lib/worker/index.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L53">lib/worker/index.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,7 +408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L22">lib/worker/index.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L23">lib/worker/index.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -416,7 +443,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/7c890fa/lib/worker/index.ts#L40">lib/worker/index.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/4c89240/lib/worker/index.ts#L41">lib/worker/index.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -525,6 +552,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="worker.WorkerContext.html#sync" class="tsd-kind-icon">sync</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="worker.WorkerContext.html#enqueueAction" class="tsd-kind-icon">enqueue<wbr>Action</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="worker.WorkerContext.html#getCardById" class="tsd-kind-icon">get<wbr>Card<wbr>ById</a>
