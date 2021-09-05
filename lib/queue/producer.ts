@@ -15,6 +15,7 @@ export interface ProducerOptions {
 	arguments: ContractData;
 	currentDate?: Date;
 	originator?: string;
+	schedule?: string;
 }
 
 export interface ProducerResults {
@@ -43,4 +44,9 @@ export interface QueueProducer {
 		context: Context,
 		originator: string,
 	) => Promise<ExecuteContract | null>;
+	getNextExecutionDateTime?: (
+		context: Context,
+		session: string,
+		scheduledActionId: string,
+	) => Promise<string | null>;
 }
