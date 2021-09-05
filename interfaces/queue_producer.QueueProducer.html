@@ -85,6 +85,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#enqueue" class="tsd-kind-icon">enqueue</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#getLastExecutionEvent" class="tsd-kind-icon">get<wbr>Last<wbr>Execution<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#getNextExecutionDateTime" class="tsd-kind-icon">get<wbr>Next<wbr>Execution<wbr>Date<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#initialize" class="tsd-kind-icon">initialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#storeRequest" class="tsd-kind-icon">store<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="queue_producer.QueueProducer.html#waitResults" class="tsd-kind-icon">wait<wbr>Results</a></li>
@@ -105,7 +106,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/9bc0613/lib/queue/producer.ts#L33">lib/queue/producer.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L34">lib/queue/producer.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -134,7 +135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/9bc0613/lib/queue/producer.ts#L42">lib/queue/producer.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L43">lib/queue/producer.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,6 +152,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getNextExecutionDateTime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Next<wbr>Execution<wbr>Date<wbr>Time</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Execution<wbr>Date<wbr>Time<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="core_context.Context.html" class="tsd-signature-type" data-tsd-kind="Interface">Context</a>, session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, scheduledActionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L47">lib/queue/producer.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="core_context.Context.html" class="tsd-signature-type" data-tsd-kind="Interface">Context</a></h5>
+								</li>
+								<li>
+									<h5>session: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>scheduledActionId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="initialize" class="tsd-anchor"></a>
 					<h3>initialize</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -160,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/9bc0613/lib/queue/producer.ts#L27">lib/queue/producer.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L28">lib/queue/producer.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/9bc0613/lib/queue/producer.ts#L28">lib/queue/producer.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L29">lib/queue/producer.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -212,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/9bc0613/lib/queue/producer.ts#L38">lib/queue/producer.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/queue/producer.ts#L39">lib/queue/producer.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,6 +289,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="queue_producer.QueueProducer.html#getLastExecutionEvent" class="tsd-kind-icon">get<wbr>Last<wbr>Execution<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="queue_producer.QueueProducer.html#getNextExecutionDateTime" class="tsd-kind-icon">get<wbr>Next<wbr>Execution<wbr>Date<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="queue_producer.QueueProducer.html#initialize" class="tsd-kind-icon">initialize</a>

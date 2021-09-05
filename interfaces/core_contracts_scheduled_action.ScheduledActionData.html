@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LinkData | @balena/jellyfish-types</title>
+	<title>ScheduledActionData | @balena/jellyfish-types</title>
 	<meta name="description" content="Documentation for @balena/jellyfish-types">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">@balena/jellyfish-types</a>
 				</li>
 				<li>
-					<a href="../modules/core_contracts_link.html">core/contracts/link</a>
+					<a href="../modules/core_contracts_scheduled_action.html">core/contracts/scheduled-action</a>
 				</li>
 				<li>
-					<a href="core_contracts_link.LinkData.html">LinkData</a>
+					<a href="core_contracts_scheduled_action.ScheduledActionData.html">ScheduledActionData</a>
 				</li>
 			</ul>
-			<h1>Interface LinkData</h1>
+			<h1>Interface ScheduledActionData</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LinkData</span>
+						<span class="target">ScheduledActionData</span>
 					</li>
 				</ul>
 			</section>
@@ -87,9 +87,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core_contracts_link.LinkData.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core_contracts_link.LinkData.html#inverseName" class="tsd-kind-icon">inverse<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core_contracts_link.LinkData.html#to" class="tsd-kind-icon">to</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core_contracts_scheduled_action.ScheduledActionData.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="core_contracts_scheduled_action.ScheduledActionData.html#schedule" class="tsd-kind-icon">schedule</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,65 +97,48 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="from" class="tsd-anchor"></a>
-					<h3>from</h3>
-					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>slug<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="queue_producer.ProducerOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">ProducerOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/core/contracts/link.ts#L22">lib/core/contracts/link.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/core/contracts/scheduled-action.ts#L15">lib/core/contracts/scheduled-action.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="schedule" class="tsd-anchor"></a>
+					<h3>schedule</h3>
+					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>once<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>recurring<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/core/contracts/scheduled-action.ts#L16">lib/core/contracts/scheduled-action.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></h5>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> once<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> slug<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="inverseName" class="tsd-anchor"></a>
-					<h3>inverse<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">inverse<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/core/contracts/link.ts#L28">lib/core/contracts/link.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="to" class="tsd-anchor"></a>
-					<h3>to</h3>
-					<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>slug<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/product-os/jellyfish-types/blob/d38c0a6/lib/core/contracts/link.ts#L16">lib/core/contracts/link.ts:16</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>k: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> slug<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> recurring<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -170,31 +152,28 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/core_contracts_link.html">core/contracts/link</a>
+						<a href="../modules/core_contracts_scheduled_action.html">core/contracts/scheduled-<wbr>action</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="core_contracts_link.LinkContract.html" class="tsd-kind-icon">Link<wbr>Contract</a>
+						<a href="core_contracts_scheduled_action.ScheduledActionContract.html" class="tsd-kind-icon">Scheduled<wbr>Action<wbr>Contract</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="core_contracts_link.LinkContractDefinition.html" class="tsd-kind-icon">Link<wbr>Contract<wbr>Definition</a>
+						<a href="core_contracts_scheduled_action.ScheduledActionContractDefinition.html" class="tsd-kind-icon">Scheduled<wbr>Action<wbr>Contract<wbr>Definition</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="core_contracts_link.LinkData.html" class="tsd-kind-icon">Link<wbr>Data</a>
+						<a href="core_contracts_scheduled_action.ScheduledActionData.html" class="tsd-kind-icon">Scheduled<wbr>Action<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core_contracts_link.LinkData.html#from" class="tsd-kind-icon">from</a>
+								<a href="core_contracts_scheduled_action.ScheduledActionData.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core_contracts_link.LinkData.html#inverseName" class="tsd-kind-icon">inverse<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="core_contracts_link.LinkData.html#to" class="tsd-kind-icon">to</a>
+								<a href="core_contracts_scheduled_action.ScheduledActionData.html#schedule" class="tsd-kind-icon">schedule</a>
 							</li>
 						</ul>
 					</li>
