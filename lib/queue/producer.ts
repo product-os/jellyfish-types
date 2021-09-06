@@ -24,6 +24,8 @@ export interface ProducerResults {
 	data: ExecuteContract['data']['payload']['data'];
 }
 
+// TODO: Make getNextExecutionDateTime non-optional after
+// merging scheduled action support into jellyfish-queue
 export interface QueueProducer {
 	initialize: (context: Context) => Promise<void>;
 	storeRequest: (
