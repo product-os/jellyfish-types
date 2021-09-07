@@ -41,11 +41,11 @@ export interface JellyfishKernel {
 		session: string,
 		slug: string,
 	) => Promise<TContract | null>;
-	insertCard: <TContractData extends ContractData>(
+	insertCard: <T extends Contract = Contract>(
 		context: Context,
 		session: string,
-		contract: ContractDefinition<TContractData>,
-	) => Promise<Contract<TContractData>>;
+		object: Partial<T> & Pick<T, 'type'>,
+	) => Promise<T>;
 	replaceCard: <TContractData extends ContractData>(
 		context: Context,
 		session: string,
