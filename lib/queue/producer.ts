@@ -1,6 +1,11 @@
 import { Context, ActionRequestContract, ContractData } from '../core';
 import { ExecuteContract } from './contracts';
 
+export interface ProducerOptionsSchedule {
+	card: string;
+	runAt: string;
+}
+
 export interface ProducerOptions {
 	context: Context;
 	action: string;
@@ -9,7 +14,7 @@ export interface ProducerOptions {
 	arguments: ContractData;
 	currentDate?: Date;
 	originator?: string;
-	schedule?: string;
+	schedule?: ProducerOptionsSchedule;
 }
 
 export interface ProducerResults {
@@ -40,9 +45,5 @@ export interface QueueProducer {
 		context: Context,
 		originator: string,
 	) => Promise<ExecuteContract | null>;
-	getNextExecutionDateTime?: (
-		context: Context,
-		session: string,
-		scheduledActionId: string,
-	) => Promise<string | null>;
+	deleteJob: (context: Context, key: string) => Promise<void>;
 }
