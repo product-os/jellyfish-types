@@ -14,9 +14,9 @@ import { JSONSchema } from '../json-schema';
 
 export interface StreamChange {
 	id: string;
+	contractType: string;
 	type: 'update' | 'insert' | 'delete' | 'unmatch';
-	before: Contract;
-	after: Contract;
+	after?: Contract;
 }
 
 export interface QuerySelect {
