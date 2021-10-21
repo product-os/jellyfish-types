@@ -42,6 +42,9 @@
     "prepack": "npm run build",
     "check": "jellycheck"
   },
+  "bin": {
+    "gen-card-types": "node --require ts-node/register/transpile-only scripts/generate-card-types.ts"
+  },
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
   "dependencies": {
