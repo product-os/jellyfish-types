@@ -59,7 +59,7 @@
     "fast-json-patch": "^3.1.0",
     "jest": "^27.3.1",
     "json-schema": "^0.3.0",
-    "lint-staged": "^11.2.3",
+    "lint-staged": "^11.2.4",
     "lodash": "^4.17.21",
     "pg-promise": "^10.11.1",
     "rimraf": "^3.0.2",
