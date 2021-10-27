@@ -43,7 +43,7 @@
     "check": "jellycheck"
   },
   "bin": {
-    "gen-card-types": "node --require ts-node/register/transpile-only scripts/generate-card-types.ts"
+    "gen-card-types": "scripts/generate-card-types.ts"
   },
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
@@ -70,6 +70,9 @@
     "ts-jest": "^27.0.7",
     "typedoc": "^0.22.8",
     "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "ts-node": "^10.4.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

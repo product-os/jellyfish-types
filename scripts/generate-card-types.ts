@@ -1,4 +1,4 @@
-#! /usr/bin/env ts-node
+#!/usr/bin/env -S node --require ts-node/register/transpile-only
 
 import * as fs from 'fs';
 import * as path from 'path';
