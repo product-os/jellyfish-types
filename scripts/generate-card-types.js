@@ -1,9 +1,11 @@
-#!/usr/bin/env -S node --require ts-node/register/transpile-only
+#!/usr/bin/env node
 
-import * as fs from 'fs';
-import * as path from 'path';
-import { compile } from 'json-schema-to-typescript';
-import { filter, get, identity, sortBy } from 'lodash';
+const fs = require('fs');
+const path = require('path');
+const { compile } = require('json-schema-to-typescript');
+const { filter, get, identity, sortBy } = require('lodash');
+
+require('ts-node').register();
 
 const bannerComment = `/*
  * Copyright (C) Balena.io - All Rights Reserved
@@ -96,7 +98,7 @@ async function main() {
 	const importPath = path.join(process.cwd(), process.argv[2]);
 	console.log(`Generating types for cards in ${importPath}`);
 
-	const { default: cards } = await import(importPath);
+	const { default: cards } = require(importPath);
 
 	const uiSchemaDef = (key) => {
 		return `node_modules/@balena/jellyfish-core/build/cards/mixins/ui-schema-defs.json#/${key}`;

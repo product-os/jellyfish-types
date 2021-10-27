@@ -43,12 +43,13 @@
     "check": "jellycheck"
   },
   "bin": {
-    "gen-card-types": "scripts/generate-card-types.ts"
+    "gen-card-types": "./scripts/generate-card-types.js"
   },
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
   "dependencies": {
-    "json-schema-to-typescript": "^10.1.5"
+    "json-schema-to-typescript": "^10.1.5",
+    "ts-node": "^10.4.0"
   },
   "devDependencies": {
     "@balena/jellycheck": "^0.1.5",
@@ -70,9 +71,6 @@
     "ts-jest": "^27.0.7",
     "typedoc": "^0.22.8",
     "typescript": "^4.4.4"
-  },
-  "peerDependencies": {
-    "ts-node": "^10.4.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
