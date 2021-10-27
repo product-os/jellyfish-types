@@ -6,6 +6,11 @@
  * Proprietary and confidential.
  */
 
+/*
+ * This script generates types from contract definitions.
+ * Usage: ./scripts/generate-card-types.js /path/to/cards/index.ts
+ */
+
 const fs = require('fs');
 const path = require('path');
 const { compile } = require('json-schema-to-typescript');
