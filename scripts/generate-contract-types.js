@@ -8,7 +8,7 @@
 
 /*
  * This script generates types from contract definitions.
- * Usage: ./scripts/generate-card-types.js /path/to/cards/index.ts
+ * Usage: ./scripts/generate-contract-types.js /path/to/contracts/index.ts
  */
 
 const fs = require('fs');
@@ -107,7 +107,7 @@ export interface ${contractName}Contract
 
 async function main() {
 	const importPath = path.join(process.cwd(), process.argv[2]);
-	console.log(`Generating types for cards in ${importPath}`);
+	console.log(`Generating types for contracts in ${importPath}`);
 
 	const { default: cards } = require(importPath);
 
