@@ -45,14 +45,13 @@ import { core } from '@balena/jellyfish-types';
  */
 async function generateContractInterfaces(outputDir, contracts) {
 	let indexContent = bannerComment + typeInterfacePrefix;
-
 	const sortedContracts = sortBy(contracts, 'slug');
 
 	// Generate files
 	const results = await Promise.all(
 		sortedContracts
 			.filter((contract) => {
-				return contract.type === 'type@1.0.0';
+				return contract.type.split('@')[0] === 'type';
 			})
 			.map(async (contract) => {
 				// Not sure if we need to worry about anything other than "data".
@@ -66,6 +65,7 @@ async function generateContractInterfaces(outputDir, contracts) {
 
 				try {
 					let compiled = await compile(schema, contract.slug, {
+						bannerComment: '',
 						ignoreMinAndMaxItems: true,
 						unknownAny: true,
 						style: {
@@ -90,7 +90,6 @@ export interface ${contractName}Contract
 					// Add an export to the index file
 					indexContent += compiled;
 
-					console.log(`Generated contract interface for ${contract.slug}`);
 					return true;
 				} catch (error) {
 					console.log(`Could not create interface for ${contract.slug}`);
@@ -108,14 +107,16 @@ export interface ${contractName}Contract
 async function main() {
 	const importPath = path.join(process.cwd(), process.argv[2]);
 	console.log(`Generating types for contracts in ${importPath}`);
+	console.log('Note: This tool currently only works for type contracts');
 
-	const { default: cards } = require(importPath);
+	const imported = require(importPath);
+	const list = imported[Object.keys(imported)[0]];
 
 	const uiSchemaDef = (key) => {
 		return `node_modules/@balena/jellyfish-core/build/cards/mixins/ui-schema-defs.json#/${key}`;
 	};
 
-	const contracts = cards.map((card) => {
+	const contracts = list.map((card) => {
 		if (card instanceof Function) {
 			return card({ mixin: (_) => (schema) => schema, uiSchemaDef });
 		} else {
