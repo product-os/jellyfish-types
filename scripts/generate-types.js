@@ -8,7 +8,7 @@
 
 /*
  * This script generates types from contract definitions.
- * Usage: ./scripts/generate-contract-types.js /path/to/contracts/index.ts
+ * Usage: ./scripts/generate-types.js /path/to/contracts/index.ts
  */
 
 const fs = require('fs');
