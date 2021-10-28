@@ -43,7 +43,7 @@
     "check": "jellycheck"
   },
   "bin": {
-    "generate-contract-types": "./scripts/generate-contract-types.js"
+    "generate-types": "./scripts/generate-types.js"
   },
   "author": "Balena.io. <hello@balena.io>",
   "license": "UNLICENSED",
