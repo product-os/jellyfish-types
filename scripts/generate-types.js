@@ -98,9 +98,11 @@ export interface ${contractName}Contract
 			}),
 	);
 
-	fs.mkdirSync(outputDir, { recursive: true });
-	fs.writeFileSync(path.join(outputDir, 'types.ts'), indexContent);
-	console.log(`Types written to ${path.join(outputDir, 'types.ts')}`);
+	if (results.length > 0) {
+		fs.mkdirSync(outputDir, { recursive: true });
+		fs.writeFileSync(path.join(outputDir, 'types.ts'), indexContent);
+		console.log(`Types written to ${path.join(outputDir, 'types.ts')}`);
+	}
 	return results;
 }
 
