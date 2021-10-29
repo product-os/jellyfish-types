@@ -8,7 +8,7 @@
 
 /*
  * This script generates types from contract definitions.
- * Usage: ./scripts/generate-types.js /path/to/contracts/index.ts
+ * Check usage: ./scripts/generate-types.js --help
  */
 
 const fs = require('fs');
@@ -17,6 +17,21 @@ const { compile } = require('json-schema-to-typescript');
 const { filter, get, identity, sortBy } = require('lodash');
 
 require('ts-node').register();
+
+const argv = require('yargs/yargs')(process.argv.slice(2))
+	.usage('Usage: $0 [options]')
+	.example(
+		'$0 -i lib/cards/index.ts',
+		'generate types for cards exported from lib/cards/index.ts',
+	)
+	.alias('i', 'import')
+	.describe('i', 'Path to file that exports contracts')
+	.alias('m', 'mixins')
+	.describe('m', 'List of package(s) that provides contract mixins')
+	.default('m', '@balena/jellyfish-plugin-default,@balena/jellyfish-core')
+	.demandOption(['i'])
+	.help('h')
+	.alias('h', 'help').argv;
 
 const bannerComment = `/*
  * Copyright (C) Balena.io - All Rights Reserved
@@ -107,20 +122,27 @@ export interface ${contractName}Contract
 }
 
 async function main() {
-	const importPath = path.join(process.cwd(), process.argv[2]);
+	const importPath = path.join(process.cwd(), argv.import);
 	console.log(`Generating types for contracts in ${importPath}`);
 	console.log('Note: This tool currently only works for type contracts');
 
+	// Import mixins
+	let mixins = {};
+	argv.mixins.split(',').forEach((package) => {
+		const { cardMixins } = require(package);
+		mixins = {
+			...mixins,
+			...cardMixins,
+		};
+	});
+
+	// Import contracts
 	const imported = require(importPath);
 	const list = imported[Object.keys(imported)[0]];
 
-	const uiSchemaDef = (key) => {
-		return `node_modules/@balena/jellyfish-core/build/cards/mixins/ui-schema-defs.json#/${key}`;
-	};
-
 	const contracts = list.map((card) => {
 		if (card instanceof Function) {
-			return card({ mixin: (_) => (schema) => schema, uiSchemaDef });
+			return card(mixins);
 		} else {
 			return card;
 		}
