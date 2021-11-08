@@ -1,8 +1,5 @@
 {
   "extends": [
     "github>product-os/jellyfish-config//config/renovate"
-  ],
-  "ignoreDeps": [
-    "@balena/jellyfish-client-sdk"
   ]
 }
