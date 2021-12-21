@@ -4,7 +4,7 @@ import { Cache } from './cache';
 import { CoreErrors } from './errors';
 import { Context } from './context';
 import { Contract, ContractDefinition } from './contracts';
-import { JSONSchema } from '../json-schema';
+import { JsonSchema } from '../json-schema';
 
 export interface StreamChange {
 	id: string;
@@ -65,10 +65,10 @@ export interface StreamPayload {
 export interface Stream extends NodeJS.EventEmitter {
 	query: <TContract extends Contract>(
 		select: QuerySelect,
-		schema: JSONSchema,
+		schema: JsonSchema,
 		options: any,
 	) => Promise<TContract[]>;
-	setSchema: (select: QuerySelect, schema: JSONSchema, options: any) => void;
+	setSchema: (select: QuerySelect, schema: JsonSchema, options: any) => void;
 	push: (payload: StreamPayload) => Promise<void>;
 	tryEmitEvent: (payload: StreamPayload) => Promise<boolean>;
 	close: () => void;
@@ -116,20 +116,20 @@ export interface Backend {
 	query: <TContract extends Contract>(
 		context: Context,
 		select: QuerySelect,
-		schema: JSONSchema,
+		schema: JsonSchema,
 		options: QueryOptions,
 	) => Promise<TContract[]>;
 	prepareQueryForStream: <TContract extends Contract>(
 		context: string,
 		name: string,
 		select: QuerySelect,
-		schema: JSONSchema,
+		schema: JsonSchema,
 		options: QueryOptions,
 	) => StreamQuery<TContract>;
 	stream: (
 		context: Context,
 		select: QuerySelect,
-		schema: JSONSchema,
+		schema: JsonSchema,
 		options: QueryOptions,
 	) => Promise<Stream>;
 	getStatus: () => Promise<BackendStatus>;

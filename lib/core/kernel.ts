@@ -1,5 +1,5 @@
 import { Operation } from 'fast-json-patch';
-import { JSONSchema } from '../json-schema';
+import { JsonSchema } from '../json-schema';
 import { Backend, BackendStatus, QueryOptions, Stream } from './backend';
 import {
 	ContractMap,
@@ -54,13 +54,13 @@ export interface JellyfishKernel {
 	query: <TContract extends Contract>(
 		context: Context,
 		session: string,
-		schema: JSONSchema,
+		schema: JsonSchema,
 		options?: QueryOptions,
 	) => Promise<TContract[]>;
 	stream: (
 		context: Context,
 		session: string,
-		schema: JSONSchema,
+		schema: JsonSchema,
 	) => Promise<Stream>;
 	defaults: <TContract extends Contract>(
 		contract: Partial<TContract>,

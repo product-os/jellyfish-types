@@ -7,27 +7,27 @@
 // tslint:disable: array-type
 
 import { Contract, ContractDefinition } from './contract';
-import { JSONSchema } from '../../json-schema';
+import { JsonSchema } from '../../json-schema';
 
 export interface ViewData {
 	actor?: string;
 	allOf?: {
 		name: string;
-		schema: JSONSchema;
+		schema: JsonSchema;
 	}[];
 	anyOf?: {
 		name: string;
-		schema: JSONSchema;
+		schema: JsonSchema;
 	}[];
 	oneOf?: {
 		name: string;
-		schema: JSONSchema;
+		schema: JsonSchema;
 	}[];
 	/**
 	 * A list of data types this view can return
 	 */
 	types?: string[];
-	schema?: JSONSchema;
+	schema?: JsonSchema;
 	namespace?: string;
 	[k: string]: unknown;
 }
