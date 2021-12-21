@@ -1,8 +1,8 @@
-import { JSONSchema } from '../../json-schema';
+import { JsonSchema } from '../../json-schema';
 import { Contract, ContractDefinition } from './contract';
 
 export interface TypeData {
-	schema: JSONSchema;
+	schema: JsonSchema;
 	uiSchema?: unknown;
 	[k: string]: unknown;
 }
