@@ -1,6 +1,6 @@
 {
   "name": "@balena/jellyfish-types",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/product-os/jellyfish-types.git"
@@ -69,6 +69,6 @@
     "pre-commit": "npx lint-staged"
   },
   "versionist": {
-    "publishedAt": "2021-12-21T11:01:07.174Z"
+    "publishedAt": "2021-12-22T05:31:19.601Z"
   }
 }
