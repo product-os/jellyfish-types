@@ -17,6 +17,7 @@ export interface ActionRequestData {
 	};
 	action: string;
 	context: {
+		id: string;
 		[k: string]: unknown;
 	};
 	arguments: {

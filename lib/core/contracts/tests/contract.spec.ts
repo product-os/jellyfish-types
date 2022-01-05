@@ -17,7 +17,9 @@ describe('Contract', () => {
 				action: 'action',
 				actor: 'actor',
 				arguments: {},
-				context: {},
+				context: {
+					id: 'foobar',
+				},
 				epoch: 1,
 				input: {
 					id: 'id2',
