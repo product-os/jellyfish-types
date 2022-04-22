@@ -1,4 +1,4 @@
-import { Contract } from './contract';
+import { Contract, ContractDefinition } from './contract';
 
 export type RelationshipData = RelationshipDataGeneric &
 	RelationshipDataSpecific;
@@ -20,3 +20,6 @@ export interface RelationshipDataSpecific {
 }
 
 export interface RelationshipContract extends Contract<RelationshipData> {}
+
+export interface RelationshipDefinition
+	extends ContractDefinition<RelationshipData> {}
