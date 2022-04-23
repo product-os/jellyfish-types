@@ -8,6 +8,7 @@ export * from './oauth-client';
 export * from './oauth-provider';
 export * from './org';
 export * from './role';
+export * from './relationship';
 export * from './scheduled-action';
 export * from './session';
 export * from './type';
