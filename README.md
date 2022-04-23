@@ -1,3 +1,5 @@
+**Notice: This library has been discontinued. All TypeScript type definitions should be placed alongside the component they define, in the same repository.**
+
 # Jellyfish Types
 
 This library contains TypeScript type and interface definitions used throughout Jellyfish.
